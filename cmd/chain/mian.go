@@ -3,8 +3,8 @@ package main
 import (
 	"flag"
 	"fmt"
-	smallbankapplication "github.com/Yzxsysu/serialsmallbankapp/v2/serialsmallbankapplication/abci"
-	application "github.com/Yzxsysu/serialsmallbankapp/v2/serialsmallbankapplication/app"
+	smallbankapplication "github.com/Yzxsysu/serialsmallbankapplication/v2/smallbankapplication/abci"
+	application "github.com/Yzxsysu/serialsmallbankapplication/v2/smallbankapplication/app"
 	"github.com/spf13/viper"
 	abciclient "github.com/tendermint/tendermint/abci/client"
 	cfg "github.com/tendermint/tendermint/config"
@@ -15,6 +15,7 @@ import (
 	"os"
 	"os/signal"
 	"path/filepath"
+	"runtime"
 	"syscall"
 )
 
@@ -31,6 +32,7 @@ func init() {
 
 func main() {
 	flag.Parse()
+	runtime.GOMAXPROCS(int(coreNum))
 	if homeDir == "" {
 		homeDir = os.ExpandEnv("$HOME/.tendermint")
 	}
