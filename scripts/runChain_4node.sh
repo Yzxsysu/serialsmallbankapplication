@@ -4,7 +4,7 @@ TM_HOME="/home/.serial_tendermint"
 WORKSPACE="$GOSRC/github.com/Yzxsysu/serialsmallbankapplication"
 CURRENT_DATE=`date +"%Y-%m-%d-%H-%M"`
 LOG_DIR="$WORKSPACE/tmplog/$TEST_SCENE-$CURRENT_DATE"
-DURATION=60
+DURATION=180
 
 rm -rf $TM_HOME
 
