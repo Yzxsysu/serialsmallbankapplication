@@ -3,7 +3,6 @@ package app
 import (
 	"bytes"
 	"fmt"
-	"log"
 	"strconv"
 )
 
@@ -28,7 +27,7 @@ func ResolveTx(request *[]byte) []SmallBankTransaction {
 	txs := bytes.Split(*request, []byte(">"))
 	l := len(txs)
 	if l == 0 {
-		log.Println("the tx is nil")
+		//log.Println("the tx is nil")
 	}
 	ReceiveTx := make([]SmallBankTransaction, l)
 	for i, elements := range txs {
