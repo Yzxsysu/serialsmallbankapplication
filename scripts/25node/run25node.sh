@@ -16,7 +16,8 @@ nodeId=$2
 division=$3
 echo "group number: $groupNum, node id: $nodeId"
 
-cp -r /home/WorkPlace/github.com/Yzxsysu/serialsmallbankapplication/config/* $TM_HOME
+cp -r /home/WorkPlace/github.com/Yzxsysu/serialsmallbankapplication/testnodeconfig/${groupNum}node/* $TM_HOME
+
 echo "configs generated"
 
 pkill -9 chain
