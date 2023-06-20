@@ -1,0 +1,295 @@
+{
+  "genesis_time": "2023-05-16T02:25:32.050246711Z",
+  "chain_id": "chain-qjCTsP",
+  "initial_height": "0",
+  "consensus_params": {
+    "block": {
+      "max_bytes": "22020096",
+      "max_gas": "-1"
+    },
+    "evidence": {
+      "max_age_num_blocks": "100000",
+      "max_age_duration": "172800000000000",
+      "max_bytes": "1048576"
+    },
+    "validator": {
+      "pub_key_types": [
+        "ed25519"
+      ]
+    },
+    "version": {
+      "app_version": "0"
+    },
+    "synchrony": {
+      "precision": "505000000",
+      "message_delay": "12000000000"
+    },
+    "timeout": {
+      "propose": "3000000000",
+      "propose_delta": "500000000",
+      "vote": "1000000000",
+      "vote_delta": "500000000",
+      "commit": "1000000000",
+      "bypass_commit_timeout": false
+    },
+    "abci": {
+      "vote_extensions_enable_height": 0,
+      "recheck_tx": true
+    }
+  },
+  "validators": [
+    {
+      "address": "A4C53247E6776DEEB1D0DD3F851CD72843A31BA2",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "ehwtIi3Zf3+dDneMPM5S2hNbd+xEmO+BZjxMIavv9D8="
+      },
+      "power": "1",
+      "name": "node0"
+    },
+    {
+      "address": "5DE2A5B7652E2EC46BE899F9C5A46ED188158335",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "BNu3xJGU/0Nx71iA6/43YI1wT9swOa4XWWNJ8oLR/cc="
+      },
+      "power": "1",
+      "name": "node1"
+    },
+    {
+      "address": "3FCE176A31EDDD1C4F976CA59149B39282A50C3C",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "amg89XX0SLcImDsAijJXNAlEWZOYSvVz9amglW2tNvI="
+      },
+      "power": "1",
+      "name": "node2"
+    },
+    {
+      "address": "C4C17B23A2E4E662DFF8032AF0ECED603E9DC4DA",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "9Xcpq4kuNVbSEx3fSxjjfkWXAdPd3PPSkBPbsKMvBgs="
+      },
+      "power": "1",
+      "name": "node3"
+    },
+    {
+      "address": "9BAC01C92636FE12CFD45F50575E5C1AF9E08DBF",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "1lEkPUxzp30otXPAPKEUw0vQOWeFaffnQ7XW8HGAPWY="
+      },
+      "power": "1",
+      "name": "node4"
+    },
+    {
+      "address": "92D2CCB1D76D91D7ACC05341D03F69847FE54DF0",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "6teN5gVU3a+g+IOV7uz7By0+Ap+sQsea0kLz/wKya9Y="
+      },
+      "power": "1",
+      "name": "node5"
+    },
+    {
+      "address": "70F591DFA61238FCEB778907F1619DE28FBACC98",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "capbN0U0c6e5ZaaQ9W9plrdfrLaxXpRyoO8obKOsIt4="
+      },
+      "power": "1",
+      "name": "node6"
+    },
+    {
+      "address": "C95C9E19AF7160C3DCC58825EE01207844F761B5",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "p4NjYc/iHqmJnrJBQk8hsIOYtRQgbQDMzWLyfEuBsTo="
+      },
+      "power": "1",
+      "name": "node7"
+    },
+    {
+      "address": "28066C56786B9FC3D31CA1606F445BD4F9907371",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "D0gdTkACwSgvy+ec0tRgFEAGRE23m3XtM9v9zPkK4XU="
+      },
+      "power": "1",
+      "name": "node8"
+    },
+    {
+      "address": "DBA06E892C676E007F67F055BD4AA5183A61A9C2",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "KhPXriq9LDDqo+kkA4JlWW8w3X4xYC1dA+nSEUyzfOM="
+      },
+      "power": "1",
+      "name": "node9"
+    },
+    {
+      "address": "7F8C238EB4A7CA0A24E1C80DE8F14A60F9338276",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "hLW5PEsDRReeFVLwI0W8gVponmZT3M2DtZf80fnKBAY="
+      },
+      "power": "1",
+      "name": "node10"
+    },
+    {
+      "address": "7C577993F574ADB5EC1FCBED698755EAD2C370CF",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "EgMaYKchxXsmrFgTL6ni4cQXgc8h9eCIO+CnT4Zvsw4="
+      },
+      "power": "1",
+      "name": "node11"
+    },
+    {
+      "address": "DA3C865D8C0457ADFB1980FE46D9C5AE09899D15",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "M0Kp1UxaK2R+SqM0h/jw8U7DDGH+0rksjhxaWoSUBzM="
+      },
+      "power": "1",
+      "name": "node12"
+    },
+    {
+      "address": "CBF8DBC66B0C97EDEA63E226B9785351DEF105B0",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "y6L8wGNia/uzRIgEcviGH5hZQYqgBQzTPvz/8FvwY0c="
+      },
+      "power": "1",
+      "name": "node13"
+    },
+    {
+      "address": "AE26ADA883031821C9E64C59A38C1862EA231E9C",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "WXdZOLZTQ3Css4RX6AOiqlMWoiB7wf7iVSVfhWCNPhM="
+      },
+      "power": "1",
+      "name": "node14"
+    },
+    {
+      "address": "1A96BE2D8EC54570E8150A0AD8619C150494DF52",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "eeYnnJZBqxVYyNBZps+vm17Z/OeXbNck/uaEGe3pa34="
+      },
+      "power": "1",
+      "name": "node15"
+    },
+    {
+      "address": "82FA9EA13E6743CD7A7838D7E771D67F2ED953A2",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "zHMZHXfN/Q1mCZX1FZN4WxTMq0rj+qHNoWaEcJsn5Lg="
+      },
+      "power": "1",
+      "name": "node16"
+    },
+    {
+      "address": "4EBB505E8478D06F80771DFCFD3E66CDF0749447",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "CK0DNmE4lJ5ITpPXpTLfCTaxyHVH5SkX2sMxa6Q/VjI="
+      },
+      "power": "1",
+      "name": "node17"
+    },
+    {
+      "address": "39A9C506F80E86075499FBDFD30DCFA1C996FE62",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "syL9f6X80++5d1SReRWr8LrqHhTDQWJ9+/L9UsAVozs="
+      },
+      "power": "1",
+      "name": "node18"
+    },
+    {
+      "address": "8E2860F3EF91FE92066791CDDA8F76D2C347EFFF",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "ZDyyElKdpXN9f5cps3BU1FJJvBuFvIeCECnuJUmlj0E="
+      },
+      "power": "1",
+      "name": "node19"
+    },
+    {
+      "address": "6FA32630E1E187B85C2C06CCCE7B4534D030C7C1",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "hsTme6/a2uX6hrz3RuqIBufYNuCCWEHynyLKVkE2bMs="
+      },
+      "power": "1",
+      "name": "node20"
+    },
+    {
+      "address": "61F471673A656D226A3289874AED36760365F794",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "VrA85FHUZTBnrGKH/lwXA1GRHuu1iWzKs9ySP76Tvdc="
+      },
+      "power": "1",
+      "name": "node21"
+    },
+    {
+      "address": "D91D56232AE07775D076E001809B1CE34C173A8D",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "S9qfmEJJyHiaP77QVDa3siVPkwCyN104qVELTZoUxxY="
+      },
+      "power": "1",
+      "name": "node22"
+    },
+    {
+      "address": "FC3A6F67D989EB19728D9BCE57FB382FE9283AA5",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "7izgTKuxFAXz7YSf0py5DGXye5DIhyk4BfNPmGu3tBc="
+      },
+      "power": "1",
+      "name": "node23"
+    },
+    {
+      "address": "3DC76C1358D2CF4A8201808073DC255C553DD32A",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "eN064zTGvPOrxpWkpB0mw5G7eZQEjQrEYVVTm9qbRMI="
+      },
+      "power": "1",
+      "name": "node24"
+    },
+    {
+      "address": "3F913024953DB4761734FFECB2E88D7A297B7375",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "hokuWPUlIz59qjVj93cyQEkmMyZMJ37+k51FRNH1e6U="
+      },
+      "power": "1",
+      "name": "node25"
+    },
+    {
+      "address": "F6D947DDCB8E65DC9A7152BEFE6E84A9F2C450E2",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "301zeMFsTaF96/MsLsSqPIODmyijpA+fC67zeOeP3ws="
+      },
+      "power": "1",
+      "name": "node26"
+    },
+    {
+      "address": "D6B221AE4AD689B8FAC0F6B01EBF8EED7FFBC749",
+      "pub_key": {
+        "type": "tendermint/PubKeyEd25519",
+        "value": "6QGCXjB59VP4SoNsV8oxLcd6q2mvPebGAhokDR/Kgvw="
+      },
+      "power": "1",
+      "name": "node27"
+    }
+  ],
+  "app_hash": ""
+}

@@ -1,7 +1,23 @@
-.PHONY: build runChain_4node
+.PHONY: build runOnChain runChain
+
+
+# 定义传递的参数
+ifndef groupNum
+ groupNum = 4
+endif
+ifndef nodeId
+  nodeId = 1
+endif
+
+# 输出参数
+runChain:
+	@echo "groupNum: $(groupNum)"
+	@echo "nodeId: $(nodeId)"
+	@echo "division: $(division)"
+	bash ./scripts/$(groupNum)node/run$(groupNum)node.sh $(groupNum) $(nodeId)
 
 build:
 	bash ./scripts/goBuildExecute.sh
 
-runChain_4node:
-	bash ./scripts/runChain_4node.sh
+runOnChain:
+	bash ./scripts/runOnChain.sh
