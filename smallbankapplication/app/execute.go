@@ -93,28 +93,6 @@ func (BCstate *BlockchainState) ResolveAndExecuteTx(request *[]byte) {
 		}
 		ReceiveTx[i] = tx
 	}
-	// txElement := bytes.Split(*request, []byte(","))
-	// var tx SmallBankTransaction
-	// for _, e := range txElement {
-	// 	kv := bytes.Split(e, []byte("="))
-	// 	switch string(kv[0]) {
-	// 	case TxTypeString:
-	// 		temp, _ := strconv.ParseUint(string(kv[1]), 10, 64)
-	// 		tx.T = uint8(temp)
-	// 	case TxIdString:
-	// 		temp, _ := strconv.ParseUint(string(kv[1]), 10, 64)
-	// 		tx.I = uint16(temp)
-	// 	case FromString:
-	// 		tx.F = make([]byte, len(kv[1]))
-	// 		copy(tx.F, kv[1])
-	// 	case ToString:
-	// 		tx.O = make([]byte, len(kv[1]))
-	// 		copy(tx.O, kv[1])
-	// 	case BalanceString:
-	// 		// temp_value := string(kv[1])
-	// 		tx.B = BytesToInt(kv[1])
-	// 	}
-	// }
 
 	var TxType uint8
 	var From []byte
