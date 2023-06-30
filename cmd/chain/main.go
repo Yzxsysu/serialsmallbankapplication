@@ -3,14 +3,6 @@ package main
 import (
 	"flag"
 	"fmt"
-	smallbankapplication "github.com/Yzxsysu/serialsmallbankapplication/v2/smallbankapplication/abci"
-	application "github.com/Yzxsysu/serialsmallbankapplication/v2/smallbankapplication/app"
-	"github.com/spf13/viper"
-	abciclient "github.com/tendermint/tendermint/abci/client"
-	cfg "github.com/tendermint/tendermint/config"
-	tmlog "github.com/tendermint/tendermint/libs/log"
-	nm "github.com/tendermint/tendermint/node"
-	"github.com/tendermint/tendermint/types"
 	"log"
 	"net/http"
 	_ "net/http/pprof"
@@ -19,6 +11,15 @@ import (
 	"path/filepath"
 	"runtime"
 	"syscall"
+
+	smallbankapplication "github.com/Yzxsysu/serialsmallbankapplication/v2/smallbankapplication/abci"
+	application "github.com/Yzxsysu/serialsmallbankapplication/v2/smallbankapplication/app"
+	"github.com/spf13/viper"
+	abciclient "github.com/tendermint/tendermint/abci/client"
+	cfg "github.com/tendermint/tendermint/config"
+	tmlog "github.com/tendermint/tendermint/libs/log"
+	nm "github.com/tendermint/tendermint/node"
+	"github.com/tendermint/tendermint/types"
 )
 
 var homeDir string
@@ -36,6 +37,10 @@ func main() {
 	go func() {
 		http.ListenAndServe(":8083", nil)
 	}()
+	application.ByteLen = 10240
+	application.CycleNum = 1000
+	// application.ByteLen = 0
+	// application.CycleNum = 0
 	flag.Parse()
 	runtime.GOMAXPROCS(int(coreNum))
 	if homeDir == "" {
