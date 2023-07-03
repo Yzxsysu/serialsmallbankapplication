@@ -2,6 +2,9 @@ package abci
 
 import (
 	"encoding/binary"
+	"log"
+	"time"
+
 	application "github.com/Yzxsysu/serialsmallbankapplication/v2/smallbankapplication/app"
 	abcicode "github.com/tendermint/tendermint/abci/example/code"
 	abcitypes "github.com/tendermint/tendermint/abci/types"
@@ -31,7 +34,10 @@ func (app *SmallBankApplication) BeginBlock(req abcitypes.RequestBeginBlock) abc
 func (app SmallBankApplication) CheckTx(req abcitypes.RequestCheckTx) abcitypes.ResponseCheckTx {
 	//var events []abcitypes.Event
 	if app.Node.Leader {
+		start := time.Now()
 		app.Node.ResolveAndExecuteTx(&req.Tx)
+		elapsed := time.Since(start)
+		log.Printf("serail execute time: %s\n", elapsed)
 	}
 	return abcitypes.ResponseCheckTx{Code: abcicode.CodeTypeOK, GasUsed: 1}
 }
@@ -39,7 +45,10 @@ func (app SmallBankApplication) CheckTx(req abcitypes.RequestCheckTx) abcitypes.
 // 这里我们创建了一个batch，它将存储block的交易。
 func (app *SmallBankApplication) DeliverTx(req abcitypes.RequestDeliverTx) abcitypes.ResponseDeliverTx {
 	if !app.Node.Leader {
+		start := time.Now()
 		app.Node.ResolveAndExecuteTx(&req.Tx)
+		elapsed := time.Since(start)
+		log.Printf("serail validate time: %s\n", elapsed)
 	}
 	return abcitypes.ResponseDeliverTx{Code: abcicode.CodeTypeOK}
 }

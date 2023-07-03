@@ -37,8 +37,8 @@ func main() {
 	go func() {
 		http.ListenAndServe(":8083", nil)
 	}()
-	application.ByteLen = 10240
-	application.CycleNum = 1000
+	application.ByteLen = 1024
+	application.CycleNum = 100
 	// application.ByteLen = 0
 	// application.CycleNum = 0
 	flag.Parse()
